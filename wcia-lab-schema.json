@@ -1,0 +1,51 @@
+{
+  "document_name": "WCIA Lab Result Schema",
+  "document_schema_version": "1.0.0.0", 
+  "labresult_id": "01FJYMPFXQ88WKWD57X6T3YSWC", //LAB EXTERNAL ID
+  "sample": {
+        "id": "01FJYMPFXQ9NWTWF4B00N0VXEG", //LOT ID FROM ORIGIN EXTERNAL Id
+  },
+  "coa": "URL to the COA doc pdf/other",
+  "status": "pass",
+  "metric_list": [
+    {
+      "test_id": "026MY6XC10LM49CV7QP0JM9QH8",
+      "test_type": "Cannabinoids", //See Assay/Test Types
+      "status": "pass|fail", //Optional
+      "metrics": [
+        {
+          "id": "018NY6XC00LM49CV7QP9KM9QH9",
+          "name": "THC",
+          "analyte_type": "Cannabinoids",
+          "qom": "1.2345",
+          "uom": "pct",
+          "status": "pass|fail" //Optional
+        },
+        {          "id": "018NY6XC00LMB0JPRM2SF8F9F2",
+          "name": "THCA",
+          "analyte_type": "Cannabinoids",
+          "qom": "1.2345",
+          "uom": "pct",
+          "status": "pass|fail" //Optional
+        },
+        {
+          "id": "018NY6XC00LMK7KHD3HPW0Y90N",
+          "name": "CBD",
+          "analyte_type": "Cannabinoids",
+          "qom": "1.2345",
+          "uom": "pct",
+          "status": "pass|fail" //Optional
+        },
+        {
+          "id": "018NY6XC00LMENDHEH2Y32X903",
+          "name": "CBDA",
+          "analyte_type": "Cannabinoids",
+          "qom": "1.2345",
+          "uom": "pct",
+          "status": "pass|fail" //Optional
+        }
+      ]
+    }
+  ],
+  "meta": {}
+}
