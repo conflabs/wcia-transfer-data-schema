@@ -37,11 +37,11 @@
       "lab_result_passed": "enum['null', 'pass', 'fail']",
       "lab_result_link": "string[URI]",
       "lab_result_data": {
-        "Lab_result_id": "",
-        "Lab_result_status": "enum['pass', 'fail']",
-        "Lab_result_detail": "string[URI]",
-        "Coa": "string[URI]",
-        "Potency": [
+        "lab_result_id": "",
+        "lab_result_status": "enum['pass', 'fail']",
+        "lab_result_detail": "string[URI]",
+        "coa": "string[URI]",
+        "potency": [
           {
             "type": "string",
             "value": "float",
