@@ -2,7 +2,7 @@
 Version control repository for the [Washington Cannabis Integrator's Alliance](https://www.cannabisintegratorsalliance.com/) Transfer Data Schema.
 [https://www.cannabisintegratorsalliance.com/](https://www.cannabisintegratorsalliance.com/)
 
-## Current Version 1.0.0
+## Current Version 1.2.0
 
 ----------------------------------------
 
