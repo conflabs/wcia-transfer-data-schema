@@ -19,66 +19,66 @@ Version control repository for the [Washington Cannabis Integrator's Alliance](h
 ## Legend
 
 ```json
-Ln #  Schema
+Line  Schema
 ----  --------------------------------------
-1.     {
-2.       "document_name": "string",
-3.       "document_schema_version": "string",
-4.       "from_license_number": "string",
-5.       "from_license_name": "string",
-6.       "to_license_number": "string",
-7.       "to_license_name": "string",
-8.       "to_license_type": "string",
-9.       "transporter_name": "string",
-10.      "transporter_license": "string",
-11.      "manifest_type": "enum['delivery', 'pick-up', 'transporter']",
-12.      "created_at": "string[ISO8601 datetime]",
-13.      "updated_at": "string[ISO8601 datetime]",
-14.      "transferred_at": "string[ISO8601 datetime]",
-15.      "external_id": "string",
-16.      "transfer_id": "string",
-17.      "est_departed_at": "string[ISO8601 datetime]",
-18.      "est_arrival_at": "string[ISO8601 datetime]",
-19.      "route": "string",
-20.      "inventory_transfer_items": [
-21.        {
-22.          "created_at": "string['ISO datetime']",
-23.          "updated_at": "string['ISO datetime']",
-24.          "external_id": "string",
-25.          "is_sample": "bool['0', '1']",
-26.          "sample_type": "enum['null', 'educational', 'qa', 'non-mandatory qa', 'vendor']",
-27.          "product_name": "string",
-28.          "qty": "string['currency']",
-29.          "unit_weight": "float",
-30.          "line_price": "string['currency']",
-31.          "uom": "enum['ml', 'mg', 'g', 'oz', 'lb', 'ea', 'kg']",
-32.          "unit_weight_uom": "enum['ml', 'mg', 'g', 'oz', 'lb', 'ea', 'kg']",
-33.          "inventory_id": "string",
-34.          "sample_source_id": "string",
-36.          "is_medical": "bool['0', '1']",
-37.          "is_for_extraction": "bool['0', '1']",
-38.          "lab_result_passed": "enum['null', 'pass', 'fail']",
-39.          "lab_result_link": "string[URI]",
-40.          "lab_result_data": {
-41.          "Lab_result_id": "",
-42.          "Lab_result_status": "enum['pass', 'fail']",
-43.          "Lab_result_detail": "string[URI]",
-44.          "Coa": "string[URI]",
-45.          "Potency":[
-46.            {
-47.              "type":"string",
-48.              "value": "float",
-49.              "unit": "enum['ml', 'mg', 'g', 'oz', 'lb', 'ea', 'kg']"
-40.            }
-50.          ]
-51.        },
-52.        "inventory_category": "string",
-53.        "inventory_type": "string",
-54.        "strain_name": "string",
-55.        "product_sku": "string"
-56.        }
-57.      ]
-58.    }
+1     {
+2       "document_name": "string",
+3       "document_schema_version": "string",
+4       "from_license_number": "string",
+5       "from_license_name": "string",
+6       "to_license_number": "string",
+7       "to_license_name": "string",
+8       "to_license_type": "string",
+9       "transporter_name": "string",
+10      "transporter_license": "string",
+11      "manifest_type": "enum['delivery', 'pick-up', 'transporter']",
+12      "created_at": "string[ISO8601 datetime]",
+13      "updated_at": "string[ISO8601 datetime]",
+14      "transferred_at": "string[ISO8601 datetime]",
+15      "external_id": "string",
+16      "transfer_id": "string",
+17      "est_departed_at": "string[ISO8601 datetime]",
+18      "est_arrival_at": "string[ISO8601 datetime]",
+19      "route": "string",
+20      "inventory_transfer_items": [
+21        {
+22          "created_at": "string['ISO datetime']",
+23          "updated_at": "string['ISO datetime']",
+24          "external_id": "string",
+25          "is_sample": "bool['0', '1']",
+26          "sample_type": "enum['null', 'educational', 'qa', 'non-mandatory qa', 'vendor']",
+27          "product_name": "string",
+28          "qty": "string['currency']",
+29          "unit_weight": "float",
+30          "line_price": "string['currency']",
+31          "uom": "enum['ml', 'mg', 'g', 'oz', 'lb', 'ea', 'kg']",
+32          "unit_weight_uom": "enum['ml', 'mg', 'g', 'oz', 'lb', 'ea', 'kg']",
+33          "inventory_id": "string",
+34          "sample_source_id": "string",
+36          "is_medical": "bool['0', '1']",
+37          "is_for_extraction": "bool['0', '1']",
+38          "lab_result_passed": "enum['null', 'pass', 'fail']",
+39          "lab_result_link": "string[URI]",
+40          "lab_result_data": {
+41          "Lab_result_id": "",
+42          "Lab_result_status": "enum['pass', 'fail']",
+43          "Lab_result_detail": "string[URI]",
+44          "Coa": "string[URI]",
+45          "Potency":[
+46            {
+47              "type":"string",
+48              "value": "float",
+49              "unit": "enum['ml', 'mg', 'g', 'oz', 'lb', 'ea', 'kg']"
+40            }
+50          ]
+51        },
+52        "inventory_category": "string",
+53        "inventory_type": "string",
+54        "strain_name": "string",
+55        "product_sku": "string"
+56        }
+57      ]
+58    }
 ```
 
 # Fields Guide
