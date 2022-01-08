@@ -10,7 +10,7 @@ Version control repository for the [Washington Cannabis Integrator's Alliance](h
 - Get the descriptive guide here: [(README.md)](/v1.0.0/README.md)
 
 ### Transfer Data Schema
-- See the schema model here: [(labResultSchema.json)](/v1.0.0/WCIATransferDataSchema.json)
+- See the schema model here: [(WCIATransferDataSchema.json)](/v1.0.0/WCIATransferDataSchema.json)
 
 ----------------------------------------
 
