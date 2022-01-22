@@ -3,9 +3,9 @@ Change notes summarizing adopted changes between versioning events.
 
 ----------------------------------------
 
-## [Unpublished](https://github.com/conflabs/wcia-transfer-data-schema/compare/v1.2.0...v1.1.0)
+## [v1.2.0 (2022-01-21)](https://github.com/conflabs/wcia-transfer-data-schema/compare/v1.1.0...v1.2.0)
 
-## [v1.1.0 (2022-01-07)](https://github.com/conflabs/wcia-transfer-data-schema/compare/v1.1.0...v1.0.0)
+## [v1.1.0 (2022-01-07)](https://github.com/conflabs/wcia-transfer-data-schema/compare/v1.0.0...v1.1.0)
 
 ### Added
 - 
