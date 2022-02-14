@@ -14,6 +14,8 @@ Version control repository for the [Washington Cannabis Integrator's Alliance](h
 
 ----------------------------------------
 
+[Change Log](CHANGELOG.md)
+
 ### Resources
 
 * [JSON Specification (RFC 8259)](https://www.ietf.org/rfc/rfc8259.txt)
