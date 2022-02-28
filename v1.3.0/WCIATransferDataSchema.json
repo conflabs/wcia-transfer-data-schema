@@ -1,0 +1,59 @@
+{
+  "document_name": "string",
+  "document_schema_version": "string",
+  "document_origin": "string",
+  "from_license_number": "string",
+  "from_license_name": "string",
+  "to_license_number": "string",
+  "to_license_name": "string",
+  "to_license_type": "string",
+  "transporter_name": "string",
+  "transporter_license": "string",
+  "manifest_type": "enum['delivery', 'pick-up', 'transporter']",
+  "created_at": "string[ISO8601 datetime]",
+  "updated_at": "string[ISO8601 datetime]",
+  "transferred_at": "string[ISO8601 datetime]",
+  "external_id": "string",
+  "transfer_id": "string",
+  "est_departed_at": "string[ISO8601 datetime]",
+  "est_arrival_at": "string[ISO8601 datetime]",
+  "route": "string",
+  "inventory_transfer_items": [
+    {
+      "created_at": "string['ISO datetime']",
+      "updated_at": "string['ISO datetime']",
+      "external_id": "string",
+      "is_sample": "bool['0', '1']",
+      "sample_type": "enum['null', 'educational', 'qa', 'non-mandatory qa', 'vendor']",
+      "product_name": "string",
+      "qty": "string['currency']",
+      "unit_weight": "float",
+      "line_price": "string['currency']",
+      "uom": "enum['ml', 'mg', 'g', 'oz', 'lb', 'ea', 'kg']",
+      "unit_weight_uom": "enum['ml', 'mg', 'g', 'oz', 'lb', 'ea', 'kg']",
+      "inventory_id": "string",
+      "sample_source_id": "string",
+      "is_medical": "bool['0', '1']",
+      "is_for_extraction": "bool['0', '1']",
+      "lab_result_passed": "enum['null', 'pass', 'fail']",
+      "lab_result_link": "string[URI]",
+      "lab_result_data": {
+        "lab_result_id": "",
+        "lab_result_status": "enum['pass', 'fail']",
+        "lab_result_detail": "string[URI]",
+        "coa": "string[URI]",
+        "potency": [
+          {
+            "type": "string",
+            "value": "float",
+            "unit": "enum['ml', 'mg', 'g', 'oz', 'lb', 'ea', 'kg']"
+          }
+        ]
+      },
+      "inventory_category": "string",
+      "inventory_type": "string",
+      "strain_name": "string",
+      "product_sku": "string"
+    }
+  ]
+}
