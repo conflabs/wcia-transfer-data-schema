@@ -2,15 +2,15 @@
 Version control repository for the [Washington Cannabis Integrator's Alliance](https://www.cannabisintegratorsalliance.com/) Transfer Data Schema.
 [https://www.cannabisintegratorsalliance.com/](https://www.cannabisintegratorsalliance.com/)
 
-## Current Version 1.3.0
+## Current Version 2.0.0
 
 ----------------------------------------
 
 ### Transfer Data Documentation
-- Get the descriptive guide here: [(README.md)](/v1.3.0/README.md)
+- Get the descriptive guide here: [(README.md)](/v2.0.0/README.md)
 
 ### Transfer Data Schema
-- See the schema model here: [(WCIATransferDataSchema.json)](/v1.3.0/WCIATransferDataSchema.json)
+- See the schema model here: [(WCIATransferDataSchema.json)](/v2.0.0/WCIATransferDataSchema.json)
 
 ----------------------------------------
 
