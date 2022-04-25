@@ -364,7 +364,7 @@ Ln #  Schema
 
 ----------------------------------------
 
-## Inventory Transfer Items -> Unit Weight
+## Inventory Transfer Items -> Unit Weight (_optional_)
 
 * _Field Name:_ **serving_weight**
 * _Type:_ **string['float']**
