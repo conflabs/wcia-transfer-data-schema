@@ -71,8 +71,8 @@ Ln #  Schema
 48.                "lab_result_link": "NULL | string",
 49.                "coa_release_date": "string",
 50.                "coa_amended_date": "NULL | string",
-51.                "coa_expire_date": "NULL | string",
-52.              },
+51.                "coa_expire_date": "NULL | string"
+52.              }
 53.            ],
 54.            "potency": [
 55.              {
