@@ -18,7 +18,7 @@ Version control repository for the [Washington Cannabis Integrator's Alliance](h
 
 ## Legend
 
-```json
+```text
 Ln #  Schema
 ----  --------------------------------------
 1.     {
@@ -69,27 +69,30 @@ Ln #  Schema
 46.            "lab_result_list": [
 47.              {
 48.                "coa": "string[URI]",
-49.                "lab_result_link": "NULL | string",
-50.                "coa_release_date": "string", //ISO8601 Date Only
-51.                "coa_amended_date": "NULL | string", //ISO8601 Date Only
-52.                "coa_expire_date": "NULL | string" //ISO8601 Date Only
-53.              }
-54.            ],
-55.            "potency": [
-56.              {
-57.                "type":"string",
-58.                "value": "float",
-59.                "unit": "enum['ml', 'mg', 'g', 'oz', 'lb', 'ea', 'kg']"
-60.              }
-61.            ]
-62.        },
-63.        "inventory_category": "string",
-64.        "inventory_type": "string",
-65.        "strain_name": "string",
-66.        "product_sku": "string"
-67.        }
-68.      ]
-69.    }
+49.                "lab_result_id: "string",
+50.                "lab_result_status: "pass" or "fail",
+51.                "lab_result_detail: "string[URI]",
+52.                "lab_result_link": "NULL | string[URI]",
+53.                "coa_release_date": "string", //ISO8601 Date Only
+54.                "coa_amended_date": "NULL | string", //ISO8601 Date Only
+55.                "coa_expire_date": "NULL | string" //ISO8601 Date Only
+56.              }
+57.            ],
+58.            "potency": [
+59.              {
+60.                "type":"string",
+61.                "value": "float",
+62.                "unit": "enum['ml', 'mg', 'g', 'oz', 'lb', 'ea', 'kg']"
+63.              }
+64.            ]
+65.        },
+66.        "inventory_category": "string",
+67.        "inventory_type": "string",
+68.        "strain_name": "string",
+69.        "product_sku": "string"
+70.        }
+71.      ]
+72.    }
 ```
 
 # Fields Guide
@@ -543,13 +546,43 @@ Ln #  Schema
 
 ----------------------------------------
 
+### Inventory Transfer Items -> Lab Result Data -> Lab Result List -> Lab Result ID
+
+* _Field Name:_ **lab_result_id**
+* _Type:_ **string[URI]**
+* _Description:_
+  * Lab issued sample ID.
+* _Legend:_ **Ln 49**
+
+----------------------------------------
+
+### Inventory Transfer Items -> Lab Result Data -> Lab Result List -> Lab Result Status
+
+* _Field Name:_ **lab_result_status**
+* _Type:_ **string[URI]**
+* _Description:_
+  * A "pass" or "fail" string field provided by the Lab.
+* _Legend:_ **Ln 50**
+
+----------------------------------------
+
+### Inventory Transfer Items -> Lab Result Data -> Lab Result List -> Lab Result Detail
+
+* _Field Name:_ **lab_result_detail**
+* _Type:_ **string[URI]**
+* _Description:_
+  * A URL to the WCIA Lab Result Link.
+* _Legend:_ **Ln 51**
+
+----------------------------------------
+
 ### Inventory Transfer Items -> Lab Result Data -> Lab Result List -> Lab Result Link
 
 * _Field Name:_ **lab_result_link**
 * _Type:_ **string[URI]**
 * _Description:_
   * A link to the lab results WCIA json object.
-* _Legend:_ **Ln 49**
+* _Legend:_ **Ln 52**
 
 ----------------------------------------
 
@@ -559,7 +592,7 @@ Ln #  Schema
 * _Type:_ **NULL | string**
 * _Description:_
   * An ISO8601 Date String (e.g. 2022-01-01) representing the date the Lab released results.
-* _Legend:_ **Ln 50**
+* _Legend:_ **Ln 53**
 
 ----------------------------------------
 
@@ -569,7 +602,7 @@ Ln #  Schema
 * _Type:_ **NULL | string**
 * _Description:_
   * An ISO8601 Date String (e.g. 2022-01-01) representing the date the Lab released Amended results.
-* _Legend:_ **Ln 51**
+* _Legend:_ **Ln 54**
 
 ----------------------------------------
 
@@ -579,7 +612,7 @@ Ln #  Schema
 * _Type:_ **NULL | string**
 * _Description:_
   * An ISO8601 Date String (e.g. 2022-01-01) representing the date the Lab rresults expire.
-* _Legend:_ **Ln 52**
+* _Legend:_ **Ln 55**
 
 ----------------------------------------
 
@@ -589,7 +622,7 @@ Ln #  Schema
 * _Type:_ **array['metric object']**
 * _Description:_
   * An array of metric objects. Specifically, cannabinoid analytes required for compliance testing in WA state.
-* _Legend:_ **Ln 55**
+* _Legend:_ **Ln 58**
 
 ----------------------------------------
 
@@ -599,7 +632,7 @@ Ln #  Schema
 * _Type:_ **string**
 * _Description:_
   * The name of the cannabinoid analyzed. For example, "cbda," "thca," and "total-cannabinoids."
-* _Legend:_ **Ln 56**
+* _Legend:_ **Ln 60**
 
 ----------------------------------------
 
@@ -609,7 +642,7 @@ Ln #  Schema
 * _Type:_ **float**
 * _Description:_
   * A float value representing the quantity of the analyte reported.
-* _Legend:_ **Ln 57**
+* _Legend:_ **Ln 61**
 
 ----------------------------------------
 
@@ -620,7 +653,7 @@ Ln #  Schema
 * _Description:_
   * An enum field representing one of the following possible meausre abbreviations: 'ml,' 'mg,' 'g,' 'oz,' 'lb,' 'ea,' 'kg.'
     
-* _Legend:_ **Ln 58**
+* _Legend:_ **Ln 62**
 
 ----------------------------------------
 
@@ -630,7 +663,7 @@ Ln #  Schema
 * _Type:_ **string**
 * _Description:_
   * For purposes of Washington State, this is most commonly the State-assigned types such as "EndProduct."
-* _Legend:_ **Ln 62**
+* _Legend:_ **Ln 66**
 
 ----------------------------------------
 
@@ -640,7 +673,7 @@ Ln #  Schema
 * _Type:_ **string**
 * _Description:_
   * For purposes of Washington State, this is most commonly the State-assigned types such as "Flower Lot."
-* _Legend:_ **Ln 63**
+* _Legend:_ **Ln 67**
 
 ----------------------------------------
 
@@ -650,7 +683,7 @@ Ln #  Schema
 * _Type:_ **string**
 * _Description:_
   * The licensee-assigned name of the plant material being transferred.
-* _Legend:_ **Ln 64**
+* _Legend:_ **Ln 68**
 
 ----------------------------------------
 
@@ -660,7 +693,7 @@ Ln #  Schema
 * _Type:_ **string**
 * _Description:_
   * A sender-assigned product SKU code in string format.
-* _Legend:_ **Ln 65**
+* _Legend:_ **Ln 69**
 
 ----------------------------------------
 

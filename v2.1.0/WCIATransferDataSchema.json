@@ -46,10 +46,13 @@
         "lab_result_list": [
           {
             "coa": "string[URI]",
-            "lab_result_link": "NULL | string",
-            "coa_release_date": "string",
-            "coa_amended_date": "NULL | string",
-            "coa_expire_date": "NULL | string"
+            "lab_result_id": "string",
+            "lab_result_status": "string (pass|fail)",
+            "lab_result_detail": "string[URI]",
+            "lab_result_link": "NULL | string[URI]",
+            "coa_release_date": "string (ISO8601 Date Only)",
+            "coa_amended_date": "NULL | string (ISO8601 Date Only)",
+            "coa_expire_date": "NULL | string (ISO8601 Date Only)"
           }
         ],
         "potency": [
