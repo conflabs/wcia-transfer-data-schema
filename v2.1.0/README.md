@@ -68,27 +68,28 @@ Ln #  Schema
 45.            "coa": "string[URI]",
 46.            "lab_result_list": [
 47.              {
-48.                "lab_result_link": "NULL | string",
-49.                "coa_release_date": "string",
-50.                "coa_amended_date": "NULL | string",
-51.                "coa_expire_date": "NULL | string"
-52.              }
-53.            ],
-54.            "potency": [
-55.              {
-56.                "type":"string",
-57.                "value": "float",
-58.                "unit": "enum['ml', 'mg', 'g', 'oz', 'lb', 'ea', 'kg']"
-59.              }
-60.            ]
-61.        },
-62.        "inventory_category": "string",
-63.        "inventory_type": "string",
-64.        "strain_name": "string",
-65.        "product_sku": "string"
-66.        }
-67.      ]
-68.    }
+48.                "coa": "string[URI]",
+49.                "lab_result_link": "NULL | string",
+50.                "coa_release_date": "string", //ISO8601 Date Only
+51.                "coa_amended_date": "NULL | string", //ISO8601 Date Only
+52.                "coa_expire_date": "NULL | string" //ISO8601 Date Only
+53.              }
+54.            ],
+55.            "potency": [
+56.              {
+57.                "type":"string",
+58.                "value": "float",
+59.                "unit": "enum['ml', 'mg', 'g', 'oz', 'lb', 'ea', 'kg']"
+60.              }
+61.            ]
+62.        },
+63.        "inventory_category": "string",
+64.        "inventory_type": "string",
+65.        "strain_name": "string",
+66.        "product_sku": "string"
+67.        }
+68.      ]
+69.    }
 ```
 
 # Fields Guide
@@ -532,13 +533,23 @@ Ln #  Schema
 
 ----------------------------------------
 
+### Inventory Transfer Items -> Lab Result Data -> Lab Result List -> CoA
+
+* _Field Name:_ **Coa**
+* _Type:_ **string['URI']**
+* _Description:_
+  * A URL to the Lab result Certificate of Analysis.
+* _Legend:_ **Ln 48**
+
+----------------------------------------
+
 ### Inventory Transfer Items -> Lab Result Data -> Lab Result List -> Lab Result Link
 
 * _Field Name:_ **lab_result_link**
 * _Type:_ **string[URI]**
 * _Description:_
   * A link to the lab results WCIA json object.
-* _Legend:_ **Ln 48**
+* _Legend:_ **Ln 49**
 
 ----------------------------------------
 
@@ -548,7 +559,7 @@ Ln #  Schema
 * _Type:_ **NULL | string**
 * _Description:_
   * An ISO8601 Date String (e.g. 2022-01-01) representing the date the Lab released results.
-* _Legend:_ **Ln 49**
+* _Legend:_ **Ln 50**
 
 ----------------------------------------
 
@@ -558,7 +569,7 @@ Ln #  Schema
 * _Type:_ **NULL | string**
 * _Description:_
   * An ISO8601 Date String (e.g. 2022-01-01) representing the date the Lab released Amended results.
-* _Legend:_ **Ln 50**
+* _Legend:_ **Ln 51**
 
 ----------------------------------------
 
@@ -568,7 +579,7 @@ Ln #  Schema
 * _Type:_ **NULL | string**
 * _Description:_
   * An ISO8601 Date String (e.g. 2022-01-01) representing the date the Lab rresults expire.
-* _Legend:_ **Ln 51**
+* _Legend:_ **Ln 52**
 
 ----------------------------------------
 
@@ -578,7 +589,7 @@ Ln #  Schema
 * _Type:_ **array['metric object']**
 * _Description:_
   * An array of metric objects. Specifically, cannabinoid analytes required for compliance testing in WA state.
-* _Legend:_ **Ln 54**
+* _Legend:_ **Ln 55**
 
 ----------------------------------------
 
