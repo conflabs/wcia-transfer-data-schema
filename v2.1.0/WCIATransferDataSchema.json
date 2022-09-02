@@ -45,6 +45,7 @@
         "coa": "string[URI]",
         "lab_result_list": [
           {
+            "coa": "string[URI]",
             "lab_result_link": "NULL | string",
             "coa_release_date": "string",
             "coa_amended_date": "NULL | string",
