@@ -50,8 +50,8 @@ Ln #  Schema
 27.          "sample_type": "enum['null', 'educational', 'qa', 'non-mandatory qa', 'vendor']",
 28.          "product_name": "string",
 29.          "qty": "string['currency']",
-30.          "unit_weight": "float",
-31.          "serving_weight": "float[OPTIONAL]",
+30.          "unit_weight": "float|decimal",
+31.          "serving_weight": "float|decimal[OPTIONAL]",
 32.          "line_price": "string['currency']",
 33.          "uom": "enum['ml', 'mg', 'g', 'oz', 'lb', 'ea', 'kg']",
 34.          "unit_weight_uom": "enum['ml', 'mg', 'g', 'oz', 'lb', 'ea', 'kg']",
@@ -80,7 +80,7 @@ Ln #  Schema
 57.            "potency": [
 58.              {
 59.                "type":"string",
-60.                "value": "float",
+60.                "value": "float|decimal",
 61.                "unit": "enum['ml', 'mg', 'g', 'oz', 'lb', 'ea', 'kg']"
 62.              }
 63.            ]
@@ -358,9 +358,9 @@ Ln #  Schema
 ## Inventory Transfer Items -> Qty
 
 * _Field Name:_ **qty**
-* _Type:_ **string['float']**
+* _Type:_ **string['float|decimal']**
 * _Description:_
-  * A string formatted as a float, representing the contents of a package. 
+  * A string formatted as a float|decimal, representing the contents of a package. 
 * _Legend:_ **Ln 29**
 
 ----------------------------------------
@@ -368,9 +368,9 @@ Ln #  Schema
 ## Inventory Transfer Items -> Unit Weight
 
 * _Field Name:_ **unit_weight**
-* _Type:_ **string['float']**
+* _Type:_ **string['float|decimal']**
 * _Description:_
-  * A string formatted as a float, representing the weight of a single unit.
+  * A string formatted as a float|decimal, representing the weight of a single unit.
 * _Legend:_ **Ln 30**
 
 ----------------------------------------
@@ -378,9 +378,9 @@ Ln #  Schema
 ## Inventory Transfer Items -> Unit Weight (_optional_)
 
 * _Field Name:_ **serving_weight**
-* _Type:_ **string['float']**
+* _Type:_ **string['float|decimal']**
 * _Description:_
-  * A string formatted as a float, representing the units per serving.
+  * A string formatted as a float|decimal, representing the units per serving.
 * _Legend:_ **Ln 31**
 
 ----------------------------------------
@@ -638,9 +638,9 @@ Ln #  Schema
 #### Inventory Transfer Items -> Lab Result Data -> Potency -> Value
 
 * _Field Name:_ **value**
-* _Type:_ **float**
+* _Type:_ **float|decimal**
 * _Description:_
-  * A float value representing the quantity of the analyte reported.
+  * A float|decimal value representing the quantity of the analyte reported.
 * _Legend:_ **Ln 60**
 
 ----------------------------------------

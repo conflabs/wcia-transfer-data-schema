@@ -27,8 +27,8 @@
       "sample_type": "enum['null', 'educational', 'qa', 'non-mandatory qa', 'vendor']",
       "product_name": "string",
       "qty": "string['currency']",
-      "unit_weight": "float",
-      "serving_weight": "float[OPTIONAL]",
+      "unit_weight": "float|decimal",
+      "serving_weight": "float|decimal[OPTIONAL]",
       "line_price": "string['currency']",
       "uom": "enum['ml', 'mg', 'g', 'oz', 'lb', 'ea', 'kg']",
       "unit_weight_uom": "enum['ml', 'mg', 'g', 'oz', 'lb', 'ea', 'kg']",
@@ -57,7 +57,7 @@
         "potency": [
           {
             "type": "string",
-            "value": "float",
+            "value": "float|decimal",
             "unit": "enum['ml', 'mg', 'g', 'oz', 'lb', 'ea', 'kg']"
           }
         ]
