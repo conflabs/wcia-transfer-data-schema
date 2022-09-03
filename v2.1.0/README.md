@@ -49,7 +49,7 @@ Ln #  Schema
 26.          "is_sample": "bool['0', '1']",
 27.          "sample_type": "enum['null', 'educational', 'qa', 'non-mandatory qa', 'vendor']",
 28.          "product_name": "string",
-29.          "qty": "string['currency']",
+29.          "qty": "numeric",
 30.          "unit_weight": "float|decimal",
 31.          "serving_weight": "float|decimal[OPTIONAL]",
 32.          "line_price": "string['currency']",

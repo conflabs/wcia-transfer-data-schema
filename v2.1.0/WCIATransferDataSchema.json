@@ -26,7 +26,7 @@
       "is_sample": "bool['0', '1']",
       "sample_type": "enum['null', 'educational', 'qa', 'non-mandatory qa', 'vendor']",
       "product_name": "string",
-      "qty": "string['currency']",
+      "qty": "numeric",
       "unit_weight": "float|decimal",
       "serving_weight": "float|decimal[OPTIONAL]",
       "line_price": "string['currency']",
