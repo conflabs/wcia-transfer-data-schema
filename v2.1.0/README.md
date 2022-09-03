@@ -71,28 +71,27 @@ Ln #  Schema
 48.                "coa": "string[URI]",
 49.                "lab_result_id: "string",
 50.                "lab_result_status: "pass" or "fail",
-51.                "lab_result_detail: "string[URI]",
-52.                "lab_result_link": "NULL | string[URI]",
-53.                "coa_release_date": "string", //ISO8601 Date Only
-54.                "coa_amended_date": "NULL | string", //ISO8601 Date Only
-55.                "coa_expire_date": "NULL | string" //ISO8601 Date Only
-56.              }
-57.            ],
-58.            "potency": [
-59.              {
-60.                "type":"string",
-61.                "value": "float",
-62.                "unit": "enum['ml', 'mg', 'g', 'oz', 'lb', 'ea', 'kg']"
-63.              }
-64.            ]
-65.        },
-66.        "inventory_category": "string",
-67.        "inventory_type": "string",
-68.        "strain_name": "string",
-69.        "product_sku": "string"
-70.        }
-71.      ]
-72.    }
+51.                "lab_result_link": "NULL | string[URI]",
+52.                "coa_release_date": "string", //ISO8601 Date Only
+53.                "coa_amended_date": "NULL | string", //ISO8601 Date Only
+54.                "coa_expire_date": "NULL | string" //ISO8601 Date Only
+55.              }
+56.            ],
+57.            "potency": [
+58.              {
+59.                "type":"string",
+60.                "value": "float",
+61.                "unit": "enum['ml', 'mg', 'g', 'oz', 'lb', 'ea', 'kg']"
+62.              }
+63.            ]
+64.        },
+65.        "inventory_category": "string",
+66.        "inventory_type": "string",
+67.        "strain_name": "string",
+68.        "product_sku": "string"
+69.        }
+70.      ]
+71.    }
 ```
 
 # Fields Guide
@@ -582,7 +581,7 @@ Ln #  Schema
 * _Type:_ **string[URI]**
 * _Description:_
   * A link to the lab results WCIA json object.
-* _Legend:_ **Ln 52**
+* _Legend:_ **Ln 51**
 
 ----------------------------------------
 
@@ -592,7 +591,7 @@ Ln #  Schema
 * _Type:_ **NULL | string**
 * _Description:_
   * An ISO8601 Date String (e.g. 2022-01-01) representing the date the Lab released results.
-* _Legend:_ **Ln 53**
+* _Legend:_ **Ln 52**
 
 ----------------------------------------
 
@@ -602,7 +601,7 @@ Ln #  Schema
 * _Type:_ **NULL | string**
 * _Description:_
   * An ISO8601 Date String (e.g. 2022-01-01) representing the date the Lab released Amended results.
-* _Legend:_ **Ln 54**
+* _Legend:_ **Ln 53**
 
 ----------------------------------------
 
@@ -612,7 +611,7 @@ Ln #  Schema
 * _Type:_ **NULL | string**
 * _Description:_
   * An ISO8601 Date String (e.g. 2022-01-01) representing the date the Lab rresults expire.
-* _Legend:_ **Ln 55**
+* _Legend:_ **Ln 54**
 
 ----------------------------------------
 
@@ -622,7 +621,7 @@ Ln #  Schema
 * _Type:_ **array['metric object']**
 * _Description:_
   * An array of metric objects. Specifically, cannabinoid analytes required for compliance testing in WA state.
-* _Legend:_ **Ln 58**
+* _Legend:_ **Ln 57**
 
 ----------------------------------------
 
@@ -632,7 +631,7 @@ Ln #  Schema
 * _Type:_ **string**
 * _Description:_
   * The name of the cannabinoid analyzed. For example, "cbda," "thca," and "total-cannabinoids."
-* _Legend:_ **Ln 60**
+* _Legend:_ **Ln 59**
 
 ----------------------------------------
 
@@ -642,7 +641,7 @@ Ln #  Schema
 * _Type:_ **float**
 * _Description:_
   * A float value representing the quantity of the analyte reported.
-* _Legend:_ **Ln 61**
+* _Legend:_ **Ln 60**
 
 ----------------------------------------
 
@@ -653,7 +652,7 @@ Ln #  Schema
 * _Description:_
   * An enum field representing one of the following possible meausre abbreviations: 'ml,' 'mg,' 'g,' 'oz,' 'lb,' 'ea,' 'kg.'
     
-* _Legend:_ **Ln 62**
+* _Legend:_ **Ln 61**
 
 ----------------------------------------
 
@@ -663,7 +662,7 @@ Ln #  Schema
 * _Type:_ **string**
 * _Description:_
   * For purposes of Washington State, this is most commonly the State-assigned types such as "EndProduct."
-* _Legend:_ **Ln 66**
+* _Legend:_ **Ln 65**
 
 ----------------------------------------
 
@@ -673,7 +672,7 @@ Ln #  Schema
 * _Type:_ **string**
 * _Description:_
   * For purposes of Washington State, this is most commonly the State-assigned types such as "Flower Lot."
-* _Legend:_ **Ln 67**
+* _Legend:_ **Ln 66**
 
 ----------------------------------------
 
@@ -683,7 +682,7 @@ Ln #  Schema
 * _Type:_ **string**
 * _Description:_
   * The licensee-assigned name of the plant material being transferred.
-* _Legend:_ **Ln 68**
+* _Legend:_ **Ln 67**
 
 ----------------------------------------
 
@@ -693,7 +692,7 @@ Ln #  Schema
 * _Type:_ **string**
 * _Description:_
   * A sender-assigned product SKU code in string format.
-* _Legend:_ **Ln 69**
+* _Legend:_ **Ln 68**
 
 ----------------------------------------
 
