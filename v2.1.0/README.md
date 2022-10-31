@@ -63,14 +63,14 @@ Ln #  Schema
 40.          "lab_result_link": "string[URI]",
 41.          "lab_result_data": {
 42.            "lab_result_id": "",
-43.            "lab_result_status": "enum['pass', 'fail']",
+43.            "lab_result_status": "enum['null', 'pass', 'fail']",
 44.            "lab_result_detail": "string[URI]",
 45.            "coa": "string[URI]",
 46.            "lab_result_list": [
 47.              {
 48.                "coa": "string[URI]",
 49.                "lab_result_id: "string",
-50.                "lab_result_status: "pass" or "fail",
+50.                "lab_result_status: "enum['null', 'pass', 'fail']",
 51.                "lab_result_link": "NULL | string[URI]",
 52.                "coa_release_date": "string", //ISO8601 Date Only
 53.                "coa_amended_date": "NULL | string", //ISO8601 Date Only
@@ -558,9 +558,9 @@ Ln #  Schema
 ### Inventory Transfer Items -> Lab Result Data -> Lab Result List -> Lab Result Status
 
 * _Field Name:_ **lab_result_status**
-* _Type:_ **string[URI]**
+* _Type:_ **enum['null', 'pass', 'fail']**
 * _Description:_
-  * A "pass" or "fail" string field provided by the Lab.
+  * An enum field representing the pass/fail status of the lab result for this item. Options are null, "pass," and "fail."
 * _Legend:_ **Ln 50**
 
 ----------------------------------------

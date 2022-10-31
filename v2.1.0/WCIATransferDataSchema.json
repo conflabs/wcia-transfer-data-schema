@@ -40,14 +40,14 @@
       "lab_result_link": "string[URI]",
       "lab_result_data": {
         "lab_result_id": "",
-        "lab_result_status": "enum['pass', 'fail']",
+        "lab_result_status": "enum['null', 'pass', 'fail']",
         "lab_result_detail": "string[URI]",
         "coa": "string[URI]",
         "lab_result_list": [
           {
             "coa": "string[URI]",
             "lab_result_id": "string",
-            "lab_result_status": "string (pass|fail)",
+            "lab_result_status": "enum['null', 'pass', 'fail']",
             "lab_result_link": "NULL | string[URI]",
             "coa_release_date": "string (ISO8601 Date Only)",
             "coa_amended_date": "NULL | string (ISO8601 Date Only)",
